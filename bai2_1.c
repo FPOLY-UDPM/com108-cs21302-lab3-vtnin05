@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Võ Tuyết Như]
+ * MSSV:      [PS48854]
+ * Lớp:       [CS31202]
  *****************************************************************************/
 
 //  BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH  
@@ -17,14 +17,27 @@
  
 #include <stdio.h>
 
-int main(){
-    
-    // Khai báo biến
+int main() {
+    float a, b;
 
+//  Phương trình có dạng ax + b = 0 
 
-    // Nhập dữ liệu
+    printf("Nhập a: ");
+    scanf("%f", &a);
 
+    printf("Nhập b: ");
+    scanf("%f", &b);
 
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+    if (a == 0) {
+        if (b == 0) {
+            printf("Phương trình có vô số nghiệm.");
+        } else {
+            printf("Phương trình vô nghiệm.");
+        }
+    } else {
+        float x = -b / a;
+        printf("Phương trình có nghiệm x = %.2f", x);
+    }
 
+    return 0;
 }

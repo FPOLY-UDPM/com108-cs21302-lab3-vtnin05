@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Võ Tuyết Như]
+ * MSSV:      [PS48854]
+ * Lớp:       [CS31202]
  *****************************************************************************/
 
 // BÀI 1: XÂY DỰNG CHƯƠNG TRÌNH TÍNH HỌC LỰC  
@@ -17,15 +17,32 @@
 
 #include <stdio.h>
 
-int main(){
+int main() {
+    float diem;
+    printf("Nhập điểm của bạn: ");
+    scanf("%f", &diem);
 
-    // Khai báo biến
-
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+        if (diem < 0 || diem > 10) {
+            printf("Điểm không hợp lệ.");
+        } 
+        else if (diem >= 9) {
+            printf("Học lực: Xuất sắc");
+        } 
+        else if (diem < 9 && diem >= 8) {
+            printf("Học lực: Giỏi");
+        } 
+        else if (diem < 8 && diem >= 6.5) {
+            printf("Học lực: Khá");
+        } 
+        else if (diem < 6.5 && diem >= 5) {
+            printf("Học lực: Trung bình");
+        } 
+        else if (diem < 5 && diem >= 3.5) {
+            printf("Học lực: Yếu");
+        } 
+        else {
+            printf("Học lực: Kém");
+        }
 
     return 0;
 }
